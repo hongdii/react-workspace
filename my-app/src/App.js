@@ -10,6 +10,7 @@ import './App.css';
   리액트에서는 버튼, 폼, 다이얼로그, 화면 모든것들을 컴포넌트로 표현
   */
 import LifecycleUpdate from './01_Lifecycle'; // js는 생략 공통 경로이기 때문에 ./
+import PropsDatatype from './02_PropsDatatype';
 
 // div : HTML요소, 직접만든것 : react요소?
 
@@ -42,7 +43,21 @@ function App() {
         {/* <h2>Hello World</h2> */}
         {/* <h2>start react</h2> */}
         {/* 임포트해온 컴포넌트 클래스를 그대로 태그(마크업)으로써 사용하면 된다. */}
-        <LifecycleUpdate prop_value="From App.js"></LifecycleUpdate>
+        {/* <LifecycleUpdate prop_value="From App.js"></LifecycleUpdate> */}
+        {/* 
+            props? 부모컴포넌트가 자식컴포넌트에게 넘겨주는 "객체"형태의 데이터( {key:value} )
+            자식컴포넌트의 시작태그에 작성하는 속성은 key값으로, 속성값은 value값의 형태로 넘어간다
+        */}
+                                      {/* 숫자는 {} */}
+        <PropsDatatype 
+              String="react" 
+              Number={200} 
+              Boolean
+              Array={[0, 1, 8]}
+              ObjectJson={{react: "리액트", today: 20230510}}
+              Function={console.log("Function Props")} 
+              StringDefault
+        ></PropsDatatype>
     </div>
   );
 }
