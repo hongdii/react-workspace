@@ -74,7 +74,7 @@ class LifecycleUpdate extends Component{
         /* state? 컴포넌트 내부에서 전역변수를 저장할 객체, 보통은 부모로부터 전달받은 props값을 저장 */
         console.log("1. constructor() 호춯");
     }
-
+    
     render(state){
         console.log("3. render함수 호출");
         console.log(this.state);
