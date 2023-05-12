@@ -4,8 +4,14 @@ import './index.css';
 import App from './App';
 import App2 from './App2';
 import App3 from './App3';
+import App4 from './APP4';
 import reportWebVitals from './reportWebVitals';
-
+import RouterComponent from './09_RouterComponent';
+import { BrowserRouter } from 'react-router-dom';
+import Ref from './10_Ref';
+import { FetchGet, FetchPost } from './11_Fetch';
+import { Axios } from 'axios';
+import { AxiosGet, AxiosPost } from './12_axios';
 
 // 루트노드
 // React로 구현한 애플리케이션은 일반적으로 하나의 루트 DOM 노드가 존재하며,
@@ -30,7 +36,19 @@ root.render(
 
     // <App />
     // <App2/>
-    <App3/>  
+    // <App3/>
+    // <App4/>  
+    // <RouterComponent>
+
+    // </RouterComponent>
+    <BrowserRouter>
+      <RouterComponent/>
+      <Ref/>
+      <FetchGet/>
+      <FetchPost/>
+      <AxiosGet/>
+      <AxiosPost/>
+    </BrowserRouter>
 );
 
 // If you want to start measuring performance in your app, pass a function

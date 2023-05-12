@@ -43,4 +43,17 @@ function FunctionComponent(props){
         )
 
     }
+
+/*
+    함수형 컴포넌트의 장점
+    1. render함수가 없기때문에 컴포넌트 마운트속도가 class Component에 비해서 빠르다.
+    2. 가독성이 좋다.
+    3. this를 사용하지 않기 때문에 props값을 유지할수가 있다.
+     - class component에서는 this.props를 통해 props에 접근했기 때문에 props의 값이 변경될 위험이 있었다.
+    4. 유일한 단점은 생명주기함수나, state관리를 할수가 없다라는점인데, react hook의 등장으로 단점이 사라져버림.
+
+    리액트에서는 hook의 등장이후로 class component방식보다 함수형 컴포넌트 방식으로 프로그래밍하는것을 권장한다.
+    
+*/
+
 export default FunctionComponent;
