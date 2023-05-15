@@ -12,6 +12,7 @@ import Ref from './10_Ref';
 import { FetchGet, FetchPost } from './11_Fetch';
 import { Axios } from 'axios';
 import { AxiosGet, AxiosPost } from './12_axios';
+import { Callback, PromiseThen, PromiseCatch } from './13_Callback';
 
 // 루트노드
 // React로 구현한 애플리케이션은 일반적으로 하나의 루트 DOM 노드가 존재하며,
@@ -44,10 +45,13 @@ root.render(
     <BrowserRouter>
       <RouterComponent/>
       <Ref/>
-      <FetchGet/>
+      {/* <FetchGet/>
       <FetchPost/>
       <AxiosGet/>
-      <AxiosPost/>
+      <AxiosPost/> */}
+      <Callback/>
+      <PromiseThen/>
+      <PromiseCatch/>
     </BrowserRouter>
 );
 
